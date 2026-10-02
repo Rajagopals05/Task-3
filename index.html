@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Advanced Styling & JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ApexPlanet Task 3</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#quiz">Interactive Quiz</a></li>
+                <li><a href="#api">API Data Fetcher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="section">
+            <h2>Interactive JavaScript Quiz</h2>
+            <div id="quizContainer" class="quiz-card">
+                <p id="questionText" class="question">Loading question...</p>
+                <div id="optionsContainer" class="options-grid"></div>
+                <button id="nextBtn" class="action-btn hidden">Next Question</button>
+            </div>
+            <div id="scoreContainer" class="score-card hidden">
+                <h3>Quiz Completed! 🎉</h3>
+                <p id="scoreText"></p>
+                <button id="restartBtn" class="action-btn">Retake Quiz</button>
+            </div>
+        </section>
+
+        <!-- Dynamic Data Fetching Section -->
+        <section id="api" class="section">
+            <h2>Dynamic API Data Fetcher</h2>
+            <p>Fetch real-time programming jokes directly using JavaScript:</p>
+            <div class="api-card">
+                <p id="jokeSetup" class="joke-text">Click the button below to fetch a joke!</p>
+                <p id="jokeDelivery" class="joke-text punchline"></p>
+                <button id="fetchBtn" class="action-btn">Fetch New Joke</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

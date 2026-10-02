@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #102a43;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102a43;
+    padding: 1rem 2rem;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    color: #102a43;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #bcccdc;
+    padding-bottom: 10px;
+}
+
+.quiz-card, .score-card, .api-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #d9e2ec;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background-color: #ffffff;
+    border: 2px solid #bcccdc;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    background-color: #e4e7eb;
+}
+
+.option-btn.correct {
+    background-color: #27ab83;
+    color: white;
+    border-color: #27ab83;
+}
+
+.option-btn.incorrect {
+    background-color: #e12d39;
+    color: white;
+    border-color: #e12d39;
+}
+
+.action-btn {
+    background-color: #102a43;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #243b53;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.joke-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.punchline {
+    font-weight: bold;
+    color: #27ab83;
+    min-height: 24px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
